@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Spaço Trainer Academia | Sua Evolução Começa Aqui</title>
+<meta name="description" content="Spaço Trainer Academia: musculação, condicionamento e acompanhamento para você evoluir. Site de demonstração.">
+<meta property="og:title" content="Spaço Trainer Academia | Sua Evolução Começa Aqui">
+<meta property="og:description" content="Mais força, mais energia e mais evolução. Site de demonstração.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b0b0c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0c'/%3E%3Cpath d='M10 28v8M16 22v20M48 22v20M54 28v8M16 32h32' stroke='%23B6FF2E' stroke-width='5' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--black:#0b0b0c;--graph:#1a1b1d;--graph2:#25272a;--line:#2f3236;--white:#fff;--mut:#a7abb0;--lime:#B6FF2E;--limeD:#9be015;
+--head:"Barlow Condensed","Arial Narrow",Impact,sans-serif;--body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;color-scheme:dark;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--black);color:#e8eaec;font:400 1.02rem/1.65 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--black);z-index:90}
+a{color:inherit}img,svg{max-width:100%;display:block}
+:focus-visible{outline:3px solid var(--lime);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1180px,100% - 2.5rem);margin-inline:auto}
+section{padding:clamp(4rem,9vw,7rem) 0}
+h1,h2,h3{font-family:var(--head);font-weight:800;text-transform:uppercase;line-height:1;margin:0;letter-spacing:.01em;color:#fff}
+h2{font-size:clamp(2.2rem,6vw,3.9rem);margin-bottom:1rem;max-width:20ch}
+.lead{color:var(--mut);max-width:60ch;margin:0 0 2.4rem}
+.tag{display:inline-block;font:700 .85rem var(--head);letter-spacing:.2em;text-transform:uppercase;color:var(--lime);margin-bottom:.9rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:50px;padding:.8rem 1.7rem;border-radius:6px;border:2px solid var(--lime);background:var(--lime);color:#0b0b0c;font:800 1.02rem var(--head);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 0 28px rgba(182,255,46,.45);background:#caff63}
+.btn.out{background:transparent;color:#fff;border-color:#fff}.btn.out:hover{background:rgba(255,255,255,.1);box-shadow:none}
+.btn[aria-disabled=true],.btn:disabled{opacity:.55;pointer-events:none}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:80;background:rgba(11,11,12,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);transition:background .3s}
+header.sc{background:rgba(11,11,12,.97)}
+.bar{display:flex;align-items:center;gap:1.4rem;height:72px}
+.logo{font:800 1.7rem var(--head);text-transform:uppercase;text-decoration:none;color:#fff;letter-spacing:.04em}.logo span{color:var(--lime)}
+nav{margin-left:auto}nav ul{display:flex;gap:1.5rem;list-style:none;margin:0;padding:0}
+nav a{text-decoration:none;font:600 .95rem var(--head);letter-spacing:.1em;text-transform:uppercase;color:#d5d8db;transition:color .2s}nav a:hover{color:var(--lime)}
+.hcta .btn{min-height:44px;padding:.5rem 1.1rem;font-size:.92rem}
+.burger{display:none;margin-left:auto;width:46px;height:46px;background:none;border:1px solid var(--line);border-radius:8px;cursor:pointer;position:relative}
+.burger i,.burger i::before,.burger i::after{position:absolute;left:12px;width:20px;height:2px;background:#fff;content:"";transition:transform .3s,top .3s}
+.burger i{top:22px}.burger i::before{top:-6px;left:0}.burger i::after{top:6px;left:0}
+.burger[aria-expanded=true] i{background:transparent}.burger[aria-expanded=true] i::before{top:0;transform:rotate(45deg);background:var(--lime)}.burger[aria-expanded=true] i::after{top:0;transform:rotate(-45deg);background:var(--lime)}
+@media(max-width:1060px){.burger{display:block}.hcta{display:none}
+nav{position:absolute;top:100%;left:0;right:0;margin:0;background:var(--graph);max-height:0;overflow:hidden;transition:max-height .35s}
+nav.open{max-height:90vh}nav ul{flex-direction:column;gap:0;padding:.4rem 1.25rem 1.3rem}nav a{display:block;padding:.95rem 0;font-size:1.15rem;border-bottom:1px solid var(--line)}
+nav .m{padding-top:1rem}nav .m .btn{width:100%}}
+@media(min-width:1061px){nav .m{display:none}}
+.hero{position:relative;min-height:min(92vh,820px);display:grid;align-items:center;overflow:hidden;padding:4rem 0;background:radial-gradient(800px 500px at 82% 30%,rgba(182,255,46,.16),transparent 60%),linear-gradient(120deg,#0b0b0c 40%,#1a1b1d)}
+.hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 46px,rgba(255,255,255,.025) 46px 48px);pointer-events:none}
+.hbar{position:absolute;right:-6%;top:50%;width:min(640px,72vw);transform:translateY(-50%) rotate(-12deg);opacity:.9;animation:sway 9s ease-in-out infinite}
+@keyframes sway{50%{transform:translateY(-52%) rotate(-9deg)}}
+.hero .wrap{position:relative}
+.hero h1{font-size:clamp(3.2rem,10vw,7.4rem);max-width:11ch;text-shadow:0 0 40px rgba(0,0,0,.6)}.hero h1 em{font-style:normal;color:var(--lime)}
+.hero p.sub{font-size:1.15rem;color:#d3d6d9;max-width:52ch;margin:1.5rem 0 2rem}
+.cta{display:flex;flex-wrap:wrap;gap:.9rem}
+.slogan{margin-top:2rem;font:700 1.1rem var(--head);letter-spacing:.14em;text-transform:uppercase;color:var(--lime)}
+.hero .wrap>*{animation:up .9s cubic-bezier(.2,.7,.2,1) both}.hero .sub{animation-delay:.12s}.hero .cta{animation-delay:.24s}.hero .slogan{animation-delay:.36s}
+@keyframes up{from{opacity:0;transform:translateY(28px)}}
+.cards3{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.2rem}
+.cd{background:var(--graph);border:1px solid var(--line);border-radius:10px;padding:1.8rem;transition:transform .3s,border-color .3s,box-shadow .3s}
+.cd:hover{transform:translateY(-5px);border-color:var(--lime);box-shadow:0 0 30px rgba(182,255,46,.12)}
+.cd svg.i{width:38px;height:38px;stroke:var(--lime);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin-bottom:1rem}
+.cd h3{font-size:1.7rem;margin-bottom:.4rem}.cd p{margin:0;color:var(--mut)}
+.demo{display:inline-block;font-size:.8rem;border:1px dashed var(--lime);color:var(--lime);border-radius:99px;padding:.1rem .8rem;margin-bottom:1rem}
+.alt{background:var(--graph)}
+.mg{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.2rem}
+@media(max-width:700px){.mg{grid-template-columns:1fr 1fr;gap:.8rem}.mc .bd{padding:.9rem!important}.mc h3{font-size:1.35rem!important}.mc p{font-size:.85rem}}
+@media(max-width:400px){.mg{grid-template-columns:1fr}}
+.mc{background:var(--black);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;transition:transform .3s,border-color .3s}
+.mc:hover{transform:translateY(-5px);border-color:var(--lime)}
+.mc .ph{aspect-ratio:16/10;background:var(--graph2);overflow:hidden}.ph>*{width:100%;height:100%;object-fit:cover;transition:transform .6s}.mc:hover .ph>*{transform:scale(1.06)}
+.mc .bd{padding:1.3rem 1.4rem 1.5rem;display:flex;flex-direction:column;gap:.6rem;flex:1}
+.mc h3{font-size:1.7rem}.mc p{margin:0;color:var(--mut);flex:1}.mc .btn{min-height:44px;padding:.5rem 1.1rem;font-size:.92rem;align-self:flex-start}
+.pg{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.3rem;align-items:stretch}
+.pl{position:relative;background:var(--graph);border:1px solid var(--line);border-radius:12px;padding:2rem 1.8rem;display:flex;flex-direction:column;gap:1rem;transition:transform .3s,border-color .3s}
+.pl:hover{transform:translateY(-5px);border-color:var(--lime)}
+.pl.hl{border-color:var(--lime);box-shadow:0 0 40px rgba(182,255,46,.18)}
+.pl .rec{position:absolute;top:-13px;left:1.8rem;background:var(--lime);color:#0b0b0c;font:800 .8rem var(--head);letter-spacing:.14em;text-transform:uppercase;padding:.15rem .8rem;border-radius:4px}
+.pl h3{font-size:2rem}.pl .pr{font:700 1.5rem var(--head);color:var(--lime);text-transform:uppercase}
+.pl ul{list-style:none;margin:0;padding:0;display:grid;gap:.6rem;flex:1}.pl li{display:flex;gap:.6rem;color:#d3d6d9}
+.pl li svg{flex:none;width:20px;height:20px;margin-top:3px;stroke:var(--lime);fill:none;stroke-width:2.4}
+.gal{display:grid;grid-template-columns:repeat(6,1fr);gap:.9rem}
+.gi{position:relative;grid-column:span 2;aspect-ratio:4/3;border:1px solid var(--line);padding:0;border-radius:10px;overflow:hidden;cursor:zoom-in;background:var(--graph2)}
+.gi:nth-child(4),.gi:nth-child(5){grid-column:span 3}
+@media(max-width:700px){.gal{grid-template-columns:1fr 1fr}.gi,.gi:nth-child(4),.gi:nth-child(5){grid-column:span 1}.gi:last-child{grid-column:span 2}}
+.gi>*{width:100%;height:100%;object-fit:cover;transition:transform .6s}.gi:hover>*{transform:scale(1.07)}
+.gi span{position:absolute;left:0;right:0;bottom:0;padding:1.8rem .9rem .6rem;background:linear-gradient(transparent,rgba(0,0,0,.85));color:#fff;font:700 1rem var(--head);letter-spacing:.06em;text-transform:uppercase;text-align:left}
+#lb{border:0;padding:0;background:transparent;max-width:min(780px,96vw);width:100%;color:#fff}#lb::backdrop{background:rgba(0,0,0,.92)}
+#lb .v{aspect-ratio:4/3;max-height:74vh;margin:auto;border-radius:12px;overflow:hidden;background:var(--graph2)}#lb .v>*{width:100%;height:100%;object-fit:contain}
+.lbn{display:flex;justify-content:space-between;align-items:center;gap:.5rem;padding:.8rem 0;flex-wrap:wrap}.lbn .btn{min-height:44px;padding:.4rem 1rem}
+.team{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.3rem}
+.pf{background:var(--graph);border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:transform .3s,border-color .3s}.pf:hover{transform:translateY(-4px);border-color:var(--lime)}
+.pf .ph{aspect-ratio:1;background:var(--graph2)}.pf .bd{padding:1.3rem 1.5rem 1.6rem}.pf h3{font-size:1.6rem}.pf .cg{color:var(--lime);font:700 .95rem var(--head);letter-spacing:.1em;text-transform:uppercase;margin:.2rem 0 .6rem}.pf p{margin:0;color:var(--mut);font-size:.95rem}
+.impact{position:relative;text-align:center;overflow:hidden;background:radial-gradient(700px 400px at 50% 0,rgba(182,255,46,.2),transparent 70%),#0b0b0c;border-block:1px solid var(--line)}
+.impact h2{margin-inline:auto;font-size:clamp(2.8rem,9vw,6rem);max-width:12ch}.impact p{color:#d3d6d9;max-width:52ch;margin:0 auto 2rem;font-size:1.1rem}
+.form{background:var(--graph);border:1px solid var(--line);border-radius:14px;padding:clamp(1.3rem,3vw,2.3rem);display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form .w2{grid-column:1/-1}@media(max-width:640px){.form{grid-template-columns:1fr}}
+label{display:grid;gap:.3rem;font:600 .95rem var(--head);letter-spacing:.08em;text-transform:uppercase;color:#d5d8db}
+input,select,textarea{width:100%;min-height:50px;padding:.65rem .85rem;border:1.5px solid var(--line);border-radius:6px;background:var(--black);color:#fff;font:400 1rem var(--body);text-transform:none;letter-spacing:0}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--lime);box-shadow:0 0 0 3px rgba(182,255,46,.2)}
+.err{color:#ff6b5e;font:500 .82rem var(--body);text-transform:none;letter-spacing:0;min-height:1em}[aria-invalid=true]{border-color:#ff6b5e}
+.warn{background:rgba(182,255,46,.1);border-left:4px solid var(--lime);padding:.8rem 1rem;border-radius:6px;font-size:.92rem;margin-bottom:1rem;color:#e8eaec}
+.warn.bad{background:rgba(255,107,94,.1);border-color:#ff6b5e}
+.review{grid-column:1/-1;border:1.5px solid var(--lime);border-radius:10px;padding:1.2rem;background:var(--black)}.review pre{white-space:pre-wrap;font:inherit;margin:0 0 1rem}
+.spin{width:16px;height:16px;border:3px solid rgba(0,0,0,.3);border-top-color:#0b0b0c;border-radius:50%;animation:rot .7s linear infinite}@keyframes rot{to{transform:rotate(360deg)}}
+.rg{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.2rem}
+.rv{margin:0;background:var(--graph);border:1px solid var(--line);border-radius:12px;padding:1.6rem;display:grid;gap:1rem}
+.rv .who{display:flex;align-items:center;gap:.8rem}.av{width:48px;height:48px;border-radius:50%;background:var(--graph2);border:1px solid var(--lime);display:grid;place-items:center;font:800 1.1rem var(--head);color:var(--lime)}
+.rv p{margin:0;font-size:1.05rem}.rv small{color:var(--mut)}
+.faq{max-width:860px}
+details{border:1px solid var(--line);border-radius:10px;background:var(--black);margin-bottom:.7rem;overflow:hidden}
+summary{cursor:pointer;list-style:none;padding:1.1rem 3.2rem 1.1rem 1.3rem;font:700 1.25rem var(--head);letter-spacing:.04em;text-transform:uppercase;color:#fff;position:relative;min-height:54px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:1.3rem;top:50%;transform:translateY(-50%);font-size:1.6rem;color:var(--lime);transition:transform .3s}
+details[open] summary::after{transform:translateY(-50%) rotate(45deg)}details[open]{border-color:var(--lime)}
+details p{margin:0;padding:0 1.3rem 1.2rem;color:var(--mut);animation:fd .3s}@keyframes fd{from{opacity:0;transform:translateY(-6px)}}
+.cg2{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}@media(max-width:860px){.cg2{grid-template-columns:1fr}}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:1rem}@media(max-width:520px){.info{grid-template-columns:1fr}}
+.ic{background:var(--graph);border:1px solid var(--line);border-radius:10px;padding:1.3rem}.ic h3{font-size:1.35rem;margin-bottom:.5rem;color:var(--lime)}.ic p{margin:0 0 .4rem;color:#d3d6d9}
+.map{border:1px solid var(--line);border-radius:10px;overflow:hidden;min-height:300px;background:var(--graph2);display:grid;place-items:center;text-align:center;color:var(--mut);padding:1.5rem}.map iframe{width:100%;height:100%;min-height:300px;border:0}
+footer{background:#060607;border-top:1px solid var(--line);padding:3.5rem 0 7rem;color:#b9bdc2;font-size:.95rem}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:2rem}@media(max-width:860px){.fgrid{grid-template-columns:1fr 1fr}}@media(max-width:520px){.fgrid{grid-template-columns:1fr}}
+footer h4{font:700 1rem var(--head);letter-spacing:.14em;text-transform:uppercase;color:var(--lime);margin:0 0 .8rem}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:.4rem}footer a{text-decoration:none}footer a:hover{color:var(--lime)}
+footer .cp{border-top:1px solid var(--line);margin-top:2rem;padding-top:1.2rem;font-size:.85rem;color:#8d9298}
+.linkbtn{background:none;border:0;color:inherit;font:inherit;cursor:pointer;padding:0;text-decoration:underline}.linkbtn:hover{color:var(--lime)}
+.wa{position:fixed;right:max(1rem,env(safe-area-inset-right,0px));bottom:max(1rem,env(safe-area-inset-bottom,0px));z-index:70;width:60px;height:60px;border-radius:50%;background:#25d366;border:0;display:grid;place-items:center;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.5);transition:transform .2s,box-shadow .2s;text-decoration:none}
+.wa:hover{transform:scale(1.1);box-shadow:0 0 28px rgba(37,211,102,.55)}.wa svg{width:30px;height:30px;fill:#fff}
+dialog{border:1px solid var(--line);border-radius:14px;background:var(--graph);color:#e8eaec;padding:1.7rem;max-width:min(580px,94vw);max-height:88vh}
+dialog::backdrop{background:rgba(0,0,0,.75)}dialog h3{margin-bottom:.8rem;font-size:2rem}dialog p,dialog li{color:var(--mut);font-size:.95rem}
+.toast{position:fixed;left:50%;bottom:max(5.5rem,env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--lime);color:#0b0b0c;font-weight:600;padding:.7rem 1.2rem;border-radius:8px;z-index:100;font-size:.92rem;max-width:92vw;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.5);animation:up .3s both}
+.rvn{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}.rvn.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rvn{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header id="hd"><div class="wrap bar">
+  <a class="logo" href="#inicio" aria-label="Spaço Trainer, início">Spaço <span>Trainer</span></a>
+  <button class="burger" id="bg" aria-label="Abrir menu" aria-expanded="false" aria-controls="nv"><i></i></button>
+  <nav id="nv" aria-label="Principal"><ul>
+    <li><a href="#inicio">Início</a></li><li><a href="#sobre">Sobre a academia</a></li><li><a href="#modalidades">Modalidades</a></li><li><a href="#planos">Planos</a></li><li><a href="#estrutura">Estrutura</a></li><li><a href="#equipe">Equipe</a></li><li><a href="#contato">Contato</a></li>
+    <li class="m"><a class="btn" href="#matricula" data-mt>Quero me matricular</a></li>
+  </ul></nav>
+  <div class="hcta"><a class="btn" href="#matricula" data-mt>Quero me matricular</a></div>
+</div></header>
+
+<main>
+<section class="hero" id="inicio">
+  <svg class="hbar" viewBox="0 0 600 160" aria-hidden="true"><g fill="none" stroke="#B6FF2E" stroke-linecap="round"><path d="M20 80h560" stroke-width="10"/><g stroke-width="14"><path d="M70 20v120M110 35v90M150 50v60"/><path d="M530 20v120M490 35v90M450 50v60"/></g></g></svg>
+  <div class="wrap">
+    <p class="tag">Spaço Trainer Academia</p>
+    <h1>Seu próximo <em>nível</em> começa aqui.</h1>
+    <p class="sub">Mais força, mais energia e mais evolução. Transforme sua rotina, supere seus limites e construa a sua melhor versão na Spaço Trainer Academia.</p>
+    <div class="cta"><a class="btn" href="#matricula" data-mt>Quero treinar</a><a class="btn out" href="#estrutura">Conheça nossa estrutura</a></div>
+    <p class="slogan">Seu objetivo. Sua evolução. Seu espaço.</p>
+  </div>
+</section>
+
+<section id="sobre"><div class="wrap">
+  <span class="demo">Texto de demonstração, substitua pelos dados reais</span><br>
+  <p class="tag">Sobre a academia</p><h2>Mais que uma academia. Um espaço para evoluir.</h2>
+  <p class="lead">A Spaço Trainer Academia é apresentada como um espaço dedicado ao movimento, à saúde e à evolução pessoal. Um ambiente pensado para quem deseja desenvolver sua força, melhorar seu condicionamento e construir uma rotina mais ativa.</p>
+  <div class="cards3" id="ab"></div>
+</div></section>
+
+<section class="alt" id="modalidades"><div class="wrap">
+  <p class="tag">Modalidades</p><h2>Encontre seu ritmo. Supere seus limites.</h2>
+  <p class="lead">Lista de demonstração. Confirme quais modalidades a academia realmente oferece e edite ou remova itens em MODALITIES.</p>
+  <div class="mg" id="mg"></div>
+</div></section>
+
+<section id="planos"><div class="wrap">
+  <p class="tag">Planos e matrículas</p><h2>Escolha o plano ideal para você.</h2>
+  <p class="lead">Condições e valores são definidos pela academia. Nenhum preço, desconto ou benefício foi inventado aqui.</p>
+  <div class="pg" id="pg"></div>
+</div></section>
+
+<section class="alt" id="estrutura"><div class="wrap">
+  <p class="tag">Estrutura</p><h2>Estrutura preparada para sua evolução.</h2>
+  <p class="lead">Ilustrações demonstrativas, não são fotos da Spaço Trainer. Substitua pelas fotos reais em GALLERY.</p>
+  <div class="gal" id="gal"></div>
+</div></section>
+
+<section id="equipe"><div class="wrap">
+  <p class="tag">Equipe e acompanhamento</p><h2>Ao seu lado em cada etapa.</h2>
+  <p class="lead">Perfis fictícios de demonstração. Não há nomes, formações ou registros reais. Edite TEAM com os dados verdadeiros.</p>
+  <div class="team" id="team"></div>
+</div></section>
+
+<section class="impact" id="comecar"><div class="wrap">
+  <h2>Chegou a hora de começar.</h2>
+  <p>Não espere o momento perfeito. Dê o primeiro passo e descubra como a atividade física pode fazer parte da sua rotina.</p>
+  <a class="btn" href="#matricula" data-mt>Quero começar agora</a>
+</div></section>
+
+<section id="matricula"><div class="wrap">
+  <p class="tag">Formulário de interesse</p><h2>Vamos começar sua jornada?</h2>
+  <p class="lead">Deixe seus dados e a equipe entra em contato. Isto não é uma matrícula: condições e vagas são confirmadas pela academia.</p>
+  <form class="form" id="f" novalidate>
+    <label>Nome completo<input id="f1" autocomplete="name"><span class="err" id="ef1"></span></label>
+    <label>Telefone ou WhatsApp<input id="f2" inputmode="tel" autocomplete="tel" placeholder="(11) 99999-9999" maxlength="15"><span class="err" id="ef2"></span></label>
+    <label>E-mail (opcional)<input id="f3" type="email" autocomplete="email"><span class="err" id="ef3"></span></label>
+    <label>Objetivo principal<select id="f4"><option value="">Selecione</option><option>Ganho de massa muscular</option><option>Emagrecimento</option><option>Condicionamento físico</option><option>Saúde e bem-estar</option><option>Ainda não decidi</option></select><span class="err" id="ef4"></span></label>
+    <label>Plano de interesse<select id="f5"></select><span class="err" id="ef5"></span></label>
+    <label>Melhor horário para contato<select id="f6"><option value="">Selecione</option><option>Manhã</option><option>Tarde</option><option>Noite</option><option>Qualquer horário</option></select><span class="err" id="ef6"></span></label>
+    <label class="w2">Modalidade de interesse (opcional)<select id="f7"></select></label>
+    <div class="w2"><button class="btn" type="submit" id="fb">Enviar meu interesse</button></div>
+    <div class="review" id="fr" hidden aria-live="polite"></div>
+  </form>
+</div></section>
+
+<section class="alt" id="depoimentos"><div class="wrap">
+  <p class="tag">Depoimentos</p><h2>Histórias de evolução.</h2>
+  <p class="lead">Exemplos fictícios para demonstrar o layout. Não são depoimentos de alunos reais. Substitua por textos autorizados em REVIEWS.</p>
+  <div class="rg" id="rg"></div>
+</div></section>
+
+<section id="faq"><div class="wrap faq">
+  <p class="tag">Perguntas frequentes</p><h2>Tire suas dúvidas.</h2>
+  <p class="lead">Respostas editáveis em FAQ. Condições comerciais só a academia pode confirmar.</p>
+  <div id="fq"></div>
+</div></section>
+
+<section class="alt" id="contato"><div class="wrap">
+  <p class="tag">Contato</p><h2>Venha conhecer.</h2><p class="lead">Dados de demonstração marcados entre colchetes. Preencha CONFIG com as informações reais.</p>
+  <div class="cg2"><div class="info" id="info"></div><div class="map" id="map"></div></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="fgrid">
+    <div><a class="logo" href="#inicio">Spaço <span>Trainer</span></a><p style="max-width:34ch">Academia fictícia criada para demonstração comercial de site institucional.</p></div>
+    <div><h4>Navegação</h4><ul><li><a href="#sobre">Sobre</a></li><li><a href="#modalidades">Modalidades</a></li><li><a href="#planos">Planos</a></li><li><a href="#estrutura">Estrutura</a></li><li><a href="#faq">Perguntas</a></li></ul></div>
+    <div><h4>Contato</h4><ul id="fc"></ul></div>
+    <div><h4>Redes</h4><ul id="fs"></ul></div>
+  </div>
+  <div class="cp">© <span id="yr"></span> Spaço Trainer Academia. Dados fictícios de demonstração. · <button class="linkbtn" id="pv">Política de privacidade</button> · <button class="linkbtn" id="tm">Termos de uso</button></div>
+</div></footer>
+
+<button class="wa" id="wa" aria-label="Conversar pelo WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2Zm0 2a8 8 0 1 1-4.100 14.900l-.3-.2-2.600.7.7-2.500-.2-.3A8 8 0 0 1 12 4Z"/><path d="M9 7.500c-.3 0-.8.300-1 1-.3 1 .1 2.200 1.400 3.800 1.500 1.800 3 2.700 4.400 3 .8.200 1.600-.4 1.800-1.100l.1-.6-1.900-.9-.8.900c-1.100-.4-2.300-1.500-2.800-2.600l.8-.9-.8-2c-.1-.3-.4-.6-.8-.6Z"/></svg></button>
+
+<dialog id="lb" aria-label="Imagem ampliada"><div class="v" id="lv"></div><div class="lbn"><button class="btn out" id="lp">← Anterior</button><span id="lc"></span><button class="btn out" id="ln">Próxima →</button><button class="btn" id="lx">Fechar</button></div></dialog>
+<dialog id="pol"><h3>Política de privacidade</h3>
+<p><b>Modelo de demonstração.</b> Revise com um profissional e adapte aos dados reais da academia (LGPD, Lei 13.709/2018) antes de publicar.</p>
+<p>O formulário de interesse coleta nome, telefone ou WhatsApp, e-mail (opcional), objetivo, plano e horário de contato preferidos.</p>
+<ul><li>Finalidade: permitir que a academia entre em contato sobre planos e matrícula.</li><li>Compartilhamento: os dados seguem para a academia pelo canal configurado (WhatsApp ou serviço de formulários), somente quando você enviar.</li><li>Este site não usa cookies de rastreamento nem anúncios.</li><li>Não informe dados de saúde sensíveis no formulário.</li><li>Direitos: acesso, correção e exclusão dos dados, pelo contato informado na seção Contato.</li></ul>
+<button class="btn" data-close>Fechar</button></dialog>
+<dialog id="trm"><h3>Termos de uso</h3>
+<p><b>Modelo de demonstração.</b> Revise com um profissional antes de publicar.</p>
+<ul><li>Este site tem caráter informativo. Planos, valores, modalidades e horários só valem após confirmação da academia.</li><li>O formulário de interesse é um pedido de contato e não constitui matrícula nem reserva de vaga.</li><li>Imagens e textos marcados como demonstrativos não representam a estrutura, equipe ou alunos reais.</li><li>O conteúdo não substitui avaliação ou orientação de profissionais de educação física e saúde. Consulte um profissional antes de iniciar atividades.</li></ul>
+<button class="btn" data-close>Fechar</button></dialog>
+
+<script>
+/* ============================ CONFIGURAÇÃO ============================ */
+/* WhatsApp da academia: país + DDD + número, só dígitos (ex.: "5511999999999"). Vazio = modo demonstração. */
+const GYM_WHATSAPP = "";
+const WA_MESSAGE = "Olá! Conheci a Spaço Trainer Academia pelo site e gostaria de saber mais sobre os planos e a matrícula.";
+/* Serviço de formulários (ex.: URL do Formspree). Vazio = o formulário usa o WhatsApp ou fica em modo demonstração.
+   Recebe um POST JSON. Use apenas endpoints públicos de formulário; nunca coloque chaves secretas aqui. */
+const FORM_ENDPOINT = "";
+const CONFIG = {
+  address: "",  /* ex.: "Rua Exemplo, 123, Centro, Cidade - UF". Habilita mapa e "Como chegar" */
+  hours: "",    /* ex.: "Seg a sex 6h às 22h" */
+  phone: "", email: "", instagram: ""  /* URL completa do perfil */
+};
+const ABOUT = [
+["Evolução","Acompanhe sua jornada e trabalhe em direção aos seus objetivos.",'<path d="M3 17l6-6 4 4 8-8M15 7h6v6"/>'],
+["Acompanhamento","Valorize a orientação profissional e a execução correta dos exercícios.",'<circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.500-6 8-6s8 2 8 6"/>'],
+["Motivação","Encontre um ambiente que incentive a constância e a superação pessoal.",'<path d="M13 2L4 14h7l-1 8 9-12h-7z"/>']];
+/* Modalidades de DEMONSTRAÇÃO: confirme, edite ou remova. "a" escolhe a ilustração. */
+const MODALITIES = [
+["Musculação","Treinos voltados ao desenvolvimento de força e massa muscular.","bb"],
+["Condicionamento físico","Atividades para trabalhar resistência e preparo físico.","hr"],
+["Treinamento funcional","Exercícios que desenvolvem diferentes capacidades físicas.","kb"],
+["Emagrecimento","Suporte para quem busca uma rotina de exercícios alinhada aos seus objetivos.","hr"],
+["Hipertrofia","Treinamento orientado para o desenvolvimento muscular.","db"],
+["Mobilidade e flexibilidade","Atividades para trabalhar amplitude de movimento e mobilidade.","st"]];
+/* Planos: preço editável. "destaque": true só quando o proprietário definir o plano recomendado. */
+const PLANS = [
+{n:"Plano Essencial",pr:"Consulte os valores",destaque:false,it:["Acesso conforme as condições do plano","Área de musculação","Ideal para quem deseja começar"]},
+{n:"Plano Performance",pr:"Consulte os valores",destaque:false,it:["Benefícios definidos pela academia","Opção de acompanhamento conforme disponibilidade","Para quem deseja manter uma rotina consistente"]},
+{n:"Plano Premium",pr:"Consulte os valores",destaque:false,it:["Benefícios adicionais configuráveis","Condições especiais conforme definição da academia","Para quem procura uma experiência diferenciada"]}];
+/* Galeria: "t" escolhe a ilustração; troque "img" por caminhos de fotos reais (ex.: "img/musculacao.jpg"). */
+const GALLERY = [
+{t:"mc",img:"",alt:"Ilustração de uma área de musculação",cap:"Área de musculação"},{t:"bb",img:"",alt:"Ilustração de equipamentos de treino",cap:"Equipamentos de treino"},
+{t:"db",img:"",alt:"Ilustração de halteres e pesos livres",cap:"Halteres e pesos livres"},{t:"kb",img:"",alt:"Ilustração de um espaço funcional",cap:"Espaço funcional"},
+{t:"rc",img:"",alt:"Ilustração de recepção",cap:"Recepção e ambiente interno"}];
+/* Equipe FICTÍCIA. Preencha só com dados reais e verificados. */
+const TEAM = [
+{n:"Profissional de exemplo 1",c:"Cargo (exemplo)",b:"Perfil fictício para demonstração do layout. Substitua por formação e apresentação reais.",img:""},
+{n:"Profissional de exemplo 2",c:"Cargo (exemplo)",b:"Perfil fictício para demonstração do layout. Substitua por formação e apresentação reais.",img:""},
+{n:"Profissional de exemplo 3",c:"Cargo (exemplo)",b:"Perfil fictício para demonstração do layout. Substitua por formação e apresentação reais.",img:""}];
+/* Depoimentos FICTÍCIOS. Substitua por textos reais e autorizados. */
+const REVIEWS = [
+{who:"Aluno exemplo 1",text:"Exemplo de depoimento sobre o ambiente e a motivação para treinar."},
+{who:"Aluno exemplo 2",text:"Exemplo de depoimento sobre a orientação recebida nos treinos."},
+{who:"Aluno exemplo 3",text:"Exemplo de depoimento sobre a constância na rotina de exercícios."}];
+const FAQ = [
+["Como faço para me matricular?","Preencha o formulário de interesse ou chame a academia pelo WhatsApp. A equipe explica as próximas etapas e as condições."],
+["Quais planos estão disponíveis?","A seção Planos mostra três modelos de demonstração. Os benefícios e valores reais são informados pela academia."],
+["A academia oferece acompanhamento profissional?","Isso depende do plano e da disponibilidade da equipe. Confirme com a academia no primeiro contato."],
+["Quais modalidades estão disponíveis?","As modalidades exibidas são de demonstração. A academia confirma quais atividades estão disponíveis e em quais horários."],
+["Como posso conhecer a estrutura?","Combine uma visita pelo WhatsApp ou pelo formulário. A galeria deste site usa ilustrações demonstrativas."],
+["Como funcionam os horários?","Os horários de funcionamento ficam na seção Contato quando configurados. Em caso de dúvida, confirme com a equipe."],
+["Como entro em contato com a equipe?","Pelo botão de WhatsApp, pelo formulário de interesse ou pelos canais da seção Contato."]];
+
+/* ============================ CÓDIGO ============================ */
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const esc=t=>String(t??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const digits=v=>String(v).replace(/\D/g,"");
+const wa=t=>GYM_WHATSAPP?"https://wa.me/"+digits(GYM_WHATSAPP)+"?text="+encodeURIComponent(t):"";
+const toast=m=>{const e=document.createElement("div");e.className="toast";e.setAttribute("role","status");e.textContent=m;document.body.append(e);setTimeout(()=>e.remove(),3600)};
+const ico=p=>`<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${p}</svg>`;
+const CKI='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l4.500 4.500L19 7"/></svg>';
+const L='fill="none" stroke="#B6FF2E" stroke-linecap="round" stroke-linejoin="round"';
+const SC={
+bb:`<g ${L} stroke-width="7"><path d="M14 100h172"/><path d="M34 60v80M54 72v56M166 60v80M146 72v56" stroke-width="12"/></g>`,
+db:`<g ${L} stroke-width="7"><path d="M70 100h60"/><path d="M52 72v56M34 84v32M148 72v56M166 84v32" stroke-width="13"/></g>`,
+kb:`<g ${L} stroke-width="7"><path d="M72 76c0-30 56-30 56 0"/><circle cx="100" cy="116" r="42" stroke-width="9"/></g>`,
+mc:`<g ${L} stroke-width="6"><path d="M40 160V50h28M40 50h90v20M130 70v60"/><rect x="60" y="120" width="70" height="14" rx="4"/><rect x="100" y="150" width="60" height="10" rx="3"/><path d="M130 70l30 40"/></g>`,
+hr:`<g ${L} stroke-width="8"><path d="M16 104h42l16-44 28 88 20-60 14 16h48"/></g>`,
+st:`<g ${L} stroke-width="7"><circle cx="100" cy="44" r="14"/><path d="M100 60v50M100 76L52 54M100 76l48-22M100 110L66 152M100 110l34 42"/></g>`,
+rc:`<g ${L} stroke-width="6"><rect x="24" y="100" width="150" height="56" rx="6"/><path d="M24 118h150M54 100V76h40v24"/><circle cx="154" cy="62" r="16"/></g>`};
+const art=t=>`<svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><radialGradient id="r" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#2e3a1a"/><stop offset="1" stop-color="#141517"/></radialGradient></defs><rect width="200" height="200" fill="url(#r)"/><path d="M-10 200L90 -10M30 210L130 0M70 220L170 10" stroke="#fff" stroke-opacity=".04" stroke-width="14"/>${SC[t]||SC.bb}</svg>`;
+const pic=(img,t,alt)=>img?`<img src="${esc(img)}" alt="${esc(alt)}" loading="lazy">`:art(t);
+
+/* menu */
+const hd=$("#hd");addEventListener("scroll",()=>hd.classList.toggle("sc",scrollY>20),{passive:true});
+const nv=$("#nv"),bg=$("#bg");const setNav=o=>{nv.classList.toggle("open",o);bg.setAttribute("aria-expanded",o);bg.setAttribute("aria-label",o?"Fechar menu":"Abrir menu")};
+bg.onclick=()=>setNav(!nv.classList.contains("open"));nv.addEventListener("click",e=>{if(e.target.closest("a"))setNav(false)});
+addEventListener("keydown",e=>{if(e.key==="Escape")setNav(false)});
+const toForm=()=>setTimeout(()=>$("#f1").focus({preventScroll:true}),600);
+$$("[data-mt]").forEach(a=>a.addEventListener("click",toForm));
+$("#yr").textContent=new Date().getFullYear();
+document.addEventListener("click",e=>{if(e.target.closest("[data-close]"))e.target.closest("dialog").close()});
+$$("dialog").forEach(d=>d.addEventListener("click",e=>{if(e.target===d)d.close()}));
+$("#pv").onclick=()=>$("#pol").showModal();$("#tm").onclick=()=>$("#trm").showModal();
+
+/* conteúdo */
+$("#ab").innerHTML=ABOUT.map(a=>`<div class="cd">${ico(a[2])}<h3>${esc(a[0])}</h3><p>${esc(a[1])}</p></div>`).join("");
+$("#mg").innerHTML=MODALITIES.map((m,i)=>`<article class="mc"><div class="ph">${art(m[2])}</div><div class="bd"><h3>${esc(m[0])}</h3><p>${esc(m[1])}</p><button class="btn out" data-m="${i}">Tenho interesse</button></div></article>`).join("");
+$("#pg").innerHTML=PLANS.map((p,i)=>`<article class="pl${p.destaque?" hl":""}">${p.destaque?'<span class="rec">Recomendado</span>':""}<h3>${esc(p.n)}</h3><div class="pr">${esc(p.pr)}</div><ul>${p.it.map(x=>`<li>${CKI}${esc(x)}</li>`).join("")}</ul><button class="btn${p.destaque?"":" out"}" data-p="${i}">Quero este plano</button></article>`).join("");
+$("#gal").innerHTML=GALLERY.map((g,i)=>`<button class="gi" data-g="${i}" aria-label="Ampliar: ${esc(g.cap)}">${pic(g.img,g.t,g.alt)}<span>${esc(g.cap)}</span></button>`).join("");
+$("#team").innerHTML=TEAM.map(p=>`<article class="pf"><div class="ph">${p.img?`<img src="${esc(p.img)}" alt="Foto de ${esc(p.n)}" loading="lazy">`:`<svg viewBox="0 0 100 100" role="img" aria-label="Avatar ilustrativo"><rect width="100" height="100" fill="#25272a"/><circle cx="50" cy="38" r="17" fill="#B6FF2E" opacity=".8"/><path d="M14 100c0-24 16-36 36-36s36 12 36 36z" fill="#3a3d41"/></svg>`}</div><div class="bd"><h3>${esc(p.n)}</h3><p class="cg">${esc(p.c)}</p><p>${esc(p.b)}</p></div></article>`).join("");
+$("#rg").innerHTML=REVIEWS.map(r=>`<figure class="rv"><div class="who"><div class="av" aria-hidden="true">${esc(r.who[0])}</div><small>${esc(r.who)} (exemplo fictício)</small></div><p>“${esc(r.text)}”</p></figure>`).join("");
+$("#fq").innerHTML=FAQ.map(f=>`<details><summary>${esc(f[0])}</summary><p>${esc(f[1])}</p></details>`).join("");
+$("#f5").innerHTML='<option value="">Selecione</option>'+PLANS.map(p=>`<option>${esc(p.n)}</option>`).join("")+'<option>Ainda não decidi</option>';
+$("#f7").innerHTML='<option value="">Nenhuma em especial</option>'+MODALITIES.map(m=>`<option>${esc(m[0])}</option>`).join("");
+$("#mg").addEventListener("click",e=>{const b=e.target.closest("[data-m]");if(!b)return;$("#f7").value=MODALITIES[+b.dataset.m][0];location.hash="#matricula";toForm();toast("Modalidade selecionada no formulário.")});
+$("#pg").addEventListener("click",e=>{const b=e.target.closest("[data-p]");if(!b)return;$("#f5").value=PLANS[+b.dataset.p].n;location.hash="#matricula";toForm();toast("Plano selecionado no formulário.")});
+
+/* galeria */
+let gi=0;const lb=$("#lb");
+const showG=i=>{gi=(i+GALLERY.length)%GALLERY.length;const g=GALLERY[gi];$("#lv").innerHTML=pic(g.img,g.t,g.alt);$("#lc").textContent=`${g.cap} (${gi+1}/${GALLERY.length})`};
+$("#gal").addEventListener("click",e=>{const b=e.target.closest("[data-g]");if(b){showG(+b.dataset.g);lb.showModal()}});
+$("#lp").onclick=()=>showG(gi-1);$("#ln").onclick=()=>showG(gi+1);$("#lx").onclick=()=>lb.close();
+lb.addEventListener("keydown",e=>{if(e.key==="ArrowLeft")showG(gi-1);if(e.key==="ArrowRight")showG(gi+1)});
+
+/* formulário de interesse */
+const mask=v=>{const d=digits(v).slice(0,11);return d.length>10?d.replace(/^(\d\d)(\d{5})(\d{0,4}).*/,"($1) $2-$3"):d.length>6?d.replace(/^(\d\d)(\d{4})(\d{0,4}).*/,"($1) $2-$3"):d.length>2?d.replace(/^(\d\d)(\d*)/,"($1) $2"):d};
+$("#f2").addEventListener("input",e=>{e.target.value=mask(e.target.value)});
+const fail=(id,m)=>{$("#"+id).setAttribute("aria-invalid",!!m);$("#e"+id).textContent=m||"";return!m};
+$("#f").onsubmit=async e=>{e.preventDefault();const v=i=>$("#f"+i).value.trim();let ok=true;const c=(i,m)=>{if(!fail("f"+i,m))ok=false};
+  const d=digits(v(2));
+  c(1,v(1).length<3?"Informe seu nome completo.":"");
+  c(2,d.length===10||d.length===11?"":"Informe um telefone válido com DDD.");
+  c(3,v(3)&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v(3))?"E-mail inválido.":"");
+  c(4,v(4)?"":"Escolha seu objetivo principal.");
+  c(5,v(5)?"":"Escolha um plano ou “Ainda não decidi”.");
+  c(6,v(6)?"":"Escolha o melhor horário para contato.");
+  if(!ok){$("#f [aria-invalid=true]")?.focus();return}
+  const data={nome:v(1),contato:v(2),email:v(3),objetivo:v(4),plano:v(5),horario:v(6),modalidade:v(7)};
+  const t=`Interesse em matrícula (Spaço Trainer Academia)\nNome: ${data.nome}\nContato: ${data.contato}`+(data.email?`\nE-mail: ${data.email}`:"")+`\nObjetivo: ${data.objetivo}\nPlano: ${data.plano}`+(data.modalidade?`\nModalidade: ${data.modalidade}`:"")+`\nMelhor horário: ${data.horario}`;
+  const box=$("#fr"),btn=$("#fb");box.hidden=false;
+  if(FORM_ENDPOINT){
+    btn.disabled=true;btn.innerHTML='<span class="spin"></span> Enviando...';box.innerHTML="";
+    try{const r=await fetch(FORM_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(data)});
+      if(!r.ok)throw new Error(r.status);
+      box.innerHTML='<div class="warn"><b>Interesse enviado.</b> A academia vai entrar em contato. Isto não é uma matrícula: condições e vagas são confirmadas por ela.</div>';$("#f").reset();toast("Interesse enviado.")}
+    catch(x){box.innerHTML='<div class="warn bad"><b>Não foi possível enviar agora.</b> Tente novamente em instantes ou fale pelo WhatsApp.</div>'}
+    btn.disabled=false;btn.textContent="Enviar meu interesse";return}
+  const link=wa(t);
+  box.innerHTML=`<h3 style="font-size:1.6rem;margin-bottom:.6rem">Revise seu interesse</h3><pre>${esc(t)}</pre>`+(link?`<a class="btn" id="send" href="${esc(link)}" target="_blank" rel="noopener">Enviar pelo WhatsApp da academia</a><p class="err" style="color:var(--mut);margin-top:.6rem">A academia só recebe quando você envia a mensagem no WhatsApp.</p>`:`<div class="warn bad"><b>Formulário ainda não conectado:</b> nenhum WhatsApp (<code>GYM_WHATSAPP</code>) nem serviço de formulários (<code>FORM_ENDPOINT</code>) está configurado, então nada foi enviado à academia.</div><button class="btn out" type="button" id="cp">Copiar resumo</button>`);
+  $("#send")?.addEventListener("click",()=>setTimeout(()=>toast("Mensagem aberta no WhatsApp. A academia responde por lá."),300));
+  $("#cp")?.addEventListener("click",async()=>{try{await navigator.clipboard.writeText(t);toast("Resumo copiado")}catch(x){toast("Não foi possível copiar aqui")}});
+  box.scrollIntoView({behavior:"smooth",block:"nearest"})};
+
+/* WhatsApp flutuante */
+const waBtn=$("#wa");
+if(GYM_WHATSAPP){const a=document.createElement("a");a.className="wa";a.id="wa";a.href=wa(WA_MESSAGE);a.target="_blank";a.rel="noopener";a.setAttribute("aria-label","Conversar pelo WhatsApp");a.innerHTML=waBtn.innerHTML;waBtn.replaceWith(a)}
+else waBtn.onclick=()=>toast("Demonstração: configure GYM_WHATSAPP no código antes de publicar.");
+
+/* contato, mapa e rodapé */
+const C=CONFIG,NC="não configurado";
+$("#info").innerHTML=`<div class="ic"><h3>Endereço</h3><p>${C.address?esc(C.address):"[ENDEREÇO DA ACADEMIA]"}</p>${C.address?`<a class="btn out" style="min-height:42px;padding:.4rem 1rem;font-size:.9rem" href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(C.address)}" target="_blank" rel="noopener">Como chegar</a>`:""}</div>
+<div class="ic"><h3>Horários</h3><p>${C.hours?esc(C.hours):"[HORÁRIOS DE FUNCIONAMENTO]"}</p></div>
+<div class="ic"><h3>Telefone</h3><p>${C.phone?`<a href="tel:${digits(C.phone)}">${esc(C.phone)}</a>`:"[TELEFONE]"}</p></div>
+<div class="ic"><h3>WhatsApp</h3><p>${GYM_WHATSAPP?`<a href="${esc(wa(WA_MESSAGE))}" target="_blank" rel="noopener">Chamar no WhatsApp</a>`:"[WHATSAPP]"}</p></div>
+<div class="ic"><h3>Instagram</h3><p>${C.instagram?`<a href="${esc(C.instagram)}" target="_blank" rel="noopener">Ver perfil</a>`:"[INSTAGRAM]"}</p></div>
+<div class="ic"><h3>E-mail</h3><p>${C.email?`<a href="mailto:${esc(C.email)}">${esc(C.email)}</a>`:"[E-MAIL]"}</p></div>`;
+$("#map").innerHTML=C.address?`<iframe title="Mapa da localização" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=${encodeURIComponent(C.address)}&output=embed"></iframe>`:"<p><b>Mapa</b><br>O mapa aparece aqui quando o endereço real for configurado em CONFIG.address.</p>";
+$("#fc").innerHTML=`<li>${C.phone?esc(C.phone):"[TELEFONE]"}</li><li>${C.address?esc(C.address):"[ENDEREÇO DA ACADEMIA]"}</li><li>${C.hours?esc(C.hours):"[HORÁRIOS DE FUNCIONAMENTO]"}</li>`;
+$("#fs").innerHTML=`<li>${C.instagram?`<a href="${esc(C.instagram)}" target="_blank" rel="noopener">Instagram</a>`:"Instagram: "+NC}</li>`;
+
+/* entrada suave */
+const io="IntersectionObserver"in window?new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.08}):null;
+$$("main section:not(.hero) .wrap").forEach(el=>{el.classList.add("rvn");io?io.observe(el):el.classList.add("in")});
+</script>
+</body>
+</html>
